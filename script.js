@@ -54,7 +54,7 @@ function startCountdown() {
             button.disabled = false;
         } else {
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            messageElement.textContent = `Hold on ${seconds}s remember it's one surprise per day, be patient!.`;
+            messageElement.textContent = `The box will open in ${seconds} seconds.`;
         }
     }, 1000);
 }
