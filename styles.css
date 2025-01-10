@@ -4,28 +4,21 @@ body {
     text-align: center;
     background-color: #fffcfc; /* Light pastel pink background */
     color: #444;
-    padding: 0;
+    padding: 30px;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Prevent scroll */
 }
 
 .container {
+    margin-top: 40px;
     padding: 25px;
     max-width: 480px;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Header Image */
 .header-image {
-    width: 80px; /* Slightly smaller for mobile */
+    width: 100px;
     margin-bottom: 20px;
     transition: transform 0.2s ease-in-out;
 }
@@ -36,7 +29,7 @@ body {
 
 /* Title */
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #f78da7; /* Pastel pink */
     margin-bottom: 12px;
 }
@@ -86,8 +79,6 @@ button {
     cursor: pointer;
     margin-top: 18px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    width: 100%; /* Full-width on smaller screens */
-    max-width: 240px;
 }
 
 button:hover {
@@ -97,7 +88,7 @@ button:hover {
 
 /* Footer */
 footer {
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 0.8rem;
     color: #aaa;
 }
@@ -105,17 +96,17 @@ footer {
 /* Responsive Styles */
 @media (max-width: 600px) {
     h1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .wish-box {
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 14px;
     }
 
     button {
-        font-size: 1rem;
-        padding: 10px 20px;
+        font-size: 1.1rem;
+        padding: 12px 22px;
     }
 }
 
