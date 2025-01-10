@@ -2,98 +2,88 @@
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    background-color: #fff8f0; /* Pastel background */
+    background-color: #fffcfc; /* Light pastel pink background */
     color: #444;
+    padding: 30px;
     margin: 0;
-    padding: 20px;
 }
 
-/* Container */
 .container {
-    margin-top: 50px;
+    margin-top: 40px;
+    padding: 25px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Header Image */
 .header-image {
-    width: 120px;
+    width: 100px;
     margin-bottom: 20px;
-    border-radius: 50%;
-    border: 3px solid #ff9aa2; /* Adding a soft border to the image */
-    padding: 5px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 
 .header-image:hover {
-    transform: scale(1.1); /* Adds a nice scale effect on hover */
+    transform: scale(1.1);
 }
 
 /* Title */
 h1 {
-    font-size: 2rem;
-    color: #ff9aa2; /* Soft, cute pink */
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 1.3rem;
+    color: #f78da7; /* Pastel pink */
+    margin-bottom: 12px;
 }
 
 /* Instructions */
 .instructions {
     font-size: 1rem;
-    color: #666;
-    margin-bottom: 20px;
+    color: #f9b8d4; /* Light pastel pink */
+    margin-bottom: 18px;
 }
 
 /* Wish Box */
 .wish-box {
-    background-color: #ffe6e6; /* Soft pastel pink */
+    background-color: #fff8f8; 
     color: #444;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 20px auto;
-    padding: 15px;
-    border-radius: 15px;
-    border: 2px dashed #ffcccc;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    width: 70%;
+    padding: 16px;
+    border-radius: 12px;
+    border: 2px dotted #f78da7;
+    width: 100%;
     max-width: 400px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1); /* Initial scale */
 }
 
-.wish-box:hover {
-    background-color: #ffd9d9; /* Lighter pink on hover */
+/* Show box animation */
+.wish-box.show {
+    background-color: #fbe1f2;
+    animation: popAnimation 0.4s ease-out;
+}
+
+@keyframes popAnimation {
+    0% { transform: scale(0.9); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 
 /* Button */
 button {
-    background-color: #ff9aa2;
+    background-color: #f78da7;
     color: white;
     border: none;
-    padding: 12px 24px;
-    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-size: 1rem;
     border-radius: 30px;
     cursor: pointer;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 20px;
+    margin-top: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
-    background-color: #ffb7b2; /* Light pink when hovering */
-    transform: scale(1.05); /* Slight scale-up on hover */
-}
-
-button:disabled {
-    background-color: #ffd1d1;
-    cursor: not-allowed;
-    box-shadow: none; /* Disable shadow when button is disabled */
-}
-
-/* Message */
-.message {
-    font-size: 0.9rem;
-    color: #888;
-    margin-top: 10px;
-    font-style: italic;
-    text-align: center;
+    background-color: #f6698f;
+    transform: scale(1.05);
 }
 
 /* Footer */
@@ -101,26 +91,24 @@ footer {
     margin-top: 50px;
     font-size: 0.8rem;
     color: #aaa;
-    font-style: italic;
 }
 
 /* Responsive Styles */
 @media (max-width: 600px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     .wish-box {
-        width: 80%; /* Adjust the width on small screens */
+        font-size: 1.1rem;
+        padding: 14px;
     }
 
     button {
-        font-size: 1rem;
-        padding: 10px 20px;
+        font-size: 1.1rem;
+        padding: 12px 22px;
     }
 }
-
-
 
 
 
